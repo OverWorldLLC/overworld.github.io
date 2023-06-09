@@ -153,3 +153,7 @@ a:hover {
 .row {
     display: flex;
 }
+.error {
+    background-color: #ff0000;
+    border-radius: 0;
+}
