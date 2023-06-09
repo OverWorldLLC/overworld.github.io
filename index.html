@@ -15,8 +15,8 @@
   <link rel="icon" type="image/x-icon" href="sources/favicon.ico">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animation.css">
-  <script src='https://smtpjs.com/v3/smtp.js'></script>
   <script src="sources/scrolling.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/nodemailer/6.6.3/nodemailer.min.js"></script>
   <script>
     $(document).ready(function(){
       $("a").on('click', function(event) {
@@ -61,11 +61,12 @@
     <h2 class="prevent-select" style="font-family: fonfon; color: #fff; filter: drop-shadow(0 0 .313em #d7d6ff); font-weight: bold;" id="corner">Get in Touch:</h2>
     <div id="contact-form">
       <form onsubmit="sendContact(event)">
-        <input id="emailInput" type="text" name="username" style="border-radius: 15px; width: 20%; height: 1.4em; background-color: #00000085; border-width: 2px; resize: none; padding: 5px; font-family: fonfon; font-size: 15px; color: #fff; outline: #4e4cc4;" placeholder="Your email" required oninvalid="this.setCustomValidity('OverWorld Team needs your email so they can reply'); this.className = 'error'" oninput="setCustomValidity('')">
+        <input id="emailInput" name="email" style="border-radius: 15px; width: 20%; height: 1.4em; background-color: #00000085; border-width: 2px; resize: none; padding: 5px; font-family: fonfon; font-size: 15px; color: #fff; outline: #4e4cc4;" placeholder="Your email" required oninvalid="this.setCustomValidity('OverWorld Team needs your email so they can reply'); this.className = 'error'" oninput="setCustomValidity('')">
         <br><br>
         <textarea id="messageInput" name="message" style="border-radius: 15px; width: 90%; height: 10em; background-color: #00000085; border-color: #4e4cc4; border-width: 2px; resize: none; padding: 10px; font-family: fonfon; font-size: 18px; color: #fff;" placeholder="What's on your mind?" required></textarea>
         <button style="z-index: 1; filter: drop-shadow(0.063em .063em .313em #4e4cc4);" type="submit">Send</button>
-        <script src="sources/email.js"></script>
+        <script src="sources/discord.js"></script>
+        
       </form>
     </div>
   </div>
