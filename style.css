@@ -57,7 +57,7 @@ span {
     background: #4e4cc4;
     position: absolute;
     transition: 0.5s;
-    left: 0;
+    right: 0;
 }
 span {
     border-radius: 1.563em;
@@ -123,13 +123,43 @@ img.resize {
     user-select: none;
     line-height: 1.8;
 }
-.noscrollbar::-webkit-scrollbar {
-    display: none;
+.custom-scrollbar{
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #4e4cc4;
+        border-radius: 15px;
+      }
+      /* Firefox */
+      ::-moz-scrollbar {
+        width: 10px;
+      }
+      ::-moz-scrollbar-thumb {
+        background-color: #4e4cc4;
+        border-radius: 15px;
+      }
 }
-.noscrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
+#messageInput.custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+  #messageInput.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #4e4cc4;
+    border-radius: 15px;
+  }
+  #messageInput.custom-scrollbar::-webkit-scrollbar-button {
+    background-color: #4e4cc4;
+  }
+  #messageInput.custom-scrollbar::-moz-scrollbar {
+    width: 10px;
+  }
+  #messageInput.custom-scrollbar::-moz-scrollbar-thumb {
+    background-color: #4e4cc4;
+    border-radius: 15px;
+  }
+  #messageInput.custom-scrollbar::-moz-scrollbar-button {
+    background-color: #4e4cc4;
+  }
 a {
     color: #0ff;
 }

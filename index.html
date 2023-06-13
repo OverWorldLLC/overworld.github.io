@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" class="noscrollbar" style="font-family: fonfon">
+<html lang="en-US" class="custom-scrollbar" style="font-family: fonfon">
 <head>
   <meta charset="utf-8">
   <title>OverWorld | Always getting better</title>
@@ -25,7 +25,7 @@
       <ul style="margin-right: 0; font-family: title;">
         <li><a href="about.html">• About Us</a></li>
         <li><a href="news.html">• Latest News</a></li>
-        <li><a href="https://overworldllc2023.wixsite.com/overworld/gta-visa">• GTA ViSA</a></li>
+        <li><a href="gta-visa.html">• GTA ViSA</a></li>
         <li><a href="over-optimizer/index.html">• Over Optimizer</a></li>
       </ul>
     </div>
@@ -46,10 +46,12 @@
     <h2 class="prevent-select" style="font-family: fonfon; color: #fff; filter: drop-shadow(0 0 .313em #d7d6ff); font-weight: bold;" id="corner">Get in Touch:</h2>
     <div id="contact-form">
       <form onsubmit="sendContact(event)">
-        <input id="emailInput" name="email" style="border-radius: 15px; width: 230px; height: 1.4em; background-color: #00000085; border-width: 2px; resize: none; padding: 5px; font-family: fonfon; font-size: 15px; color: #fff; outline: #4e4cc4;" placeholder="Your email" required oninvalid="this.setCustomValidity('OverWorld Team needs your email so they can reply'); this.className = 'error'" oninput="setCustomValidity('')">
+        <input id="emailInput" name="email" style="border-radius: 15px; width: 230px; height: 1.4em; background-color: #00000085; border-width: 2px; border-color: #4e4cc4; resize: none; padding: 5px; font-family: fonfon; font-size: 15px; color: #fff; outline: #4e4cc4;" placeholder="Your email" required oninvalid="this.setCustomValidity('OverWorld Team needs your email so they can reply'); this.className = 'error'" oninput="setCustomValidity('')">
         <br><br>
         <textarea id="messageInput" name="message" style="border-radius: 15px; width: 90%; height: 10em; background-color: #00000085; border-color: #4e4cc4; border-width: 2px; resize: none; padding: 10px; font-family: fonfon; font-size: 18px; color: #fff;" placeholder="What's on your mind?" required></textarea>
-        <button style="z-index: 1; filter: drop-shadow(0.063em .063em .313em #4e4cc4);" type="submit">Send</button>
+        <a id="buttonContainer" style="filter: drop-shadow(0 0 .313em #4e4cc4)">
+          <button style="z-index: 1; filter: drop-shadow(0.063em .063em .313em #4e4cc4);" type="submit"><span></span>Send</button>
+        </a>
         <script src="sources/discord.js"></script>
         
       </form>
