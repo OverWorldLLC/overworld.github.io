@@ -27,14 +27,24 @@ span {
     src: url(sources/title.ttf);
     font-display: auto;
 }
-body {
-    background-image: url(sources/bg.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #000;
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("sources/bg.webp") no-repeat;
+      background-size: cover;
+    }
 }
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
 .name,
 button {
     background: 0 0;
@@ -81,11 +91,6 @@ img.resize {
     float:none;
     margin: 0em 0.938em 0 0em;
 }
-.prevent-select {
-    user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
 .navbar {
     width: 85%;
     margin: auto;
@@ -124,6 +129,9 @@ img.resize {
     line-height: 1.8;
 }
 .custom-scrollbar{
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     ::-webkit-scrollbar {
         width: 10px;
       }
