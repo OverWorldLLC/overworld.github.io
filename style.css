@@ -164,7 +164,6 @@ a {
     color: #0ff;
 }
 a:hover {
-    text-decoration: underline;
     filter: drop-shadow(0 0 0.313em #00ffff);
     transition: 0.3s;
 }
