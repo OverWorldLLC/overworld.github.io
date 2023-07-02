@@ -7,21 +7,20 @@
   <link rel="icon" type="image/x-icon" href="sources/favicon.ico">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animation.css">
+  <script src="sources/scrolling.js"></script>
   <video id="background-video" autoplay loop muted poster="sources/bg.webp">
     <source src="sources/bg.mp4" type="video/mp4">
   </video>
 </head>
-  <div>
-    <div class="navbar">
-      <img src="sources/logo.webp" class="logo" alt="OverWorld logo" width="120px" height="120px">
-      <ul>
-        <li><a style="margin-right: 0; font-family: title;" href="index.html">• Home Page</a></li>
-      </ul>
-    </div>
-  </div>
   <body class="animate-in" style="padding-bottom: 1.25em; padding-left: 1.25em; padding-right: 1.25em;">
+      <div class="navbar" id="navbar">
+        <img src="sources/logo.webp" class="logo" alt="OverWorld logo" style="margin-left: 0;" width="60px" height="60px">
+        <ul style="margin-right: 3%; font-family: title;">
+          <li><a href="index.html">• Home Page</a></li>
+        </ul>
+      </div>
     <div class="center">
-      <div style="font-size: 3em; color: #f0f8ff; padding-bottom: 0.8em;">Meet Our Team:</div>
+      <div style="font-size: 3em; color: #f0f8ff; padding-bottom: 0.8em; padding-top: 70px;">Meet Our Team:</div>
       <div style="background-color: #0000009f;border-radius: 15px;padding: 10px 20px;">
       <ul style="list-style-type: none; padding-left: 0; color: #f0f8ff;">
         <li><b style="font-family: fonfon; color: #4e4cc4; filter: drop-shadow(0 0 .313em #4e4cc4); font-weight: bold;" title="ghanmirayen12@gmail.com">Rayen Ghanmi:</b> Software Manager & Responsible for the company</li>
@@ -36,15 +35,20 @@
       OverWorld, which was founded in 2023 by a team of skilled Programming students, will rapidly emerge as a leader in the software development industry due to your belief in its capabilities. Our innovative software applications are specifically designed to optimize and enhance the performance of your devices like Over Optimizer, helping you to achieve your goals faster and more efficiently. At OverWorld, we prioritize the security and safety of our customers' data and devices. Our products come equipped with state-of-the-art protection measures to ensure that they are secure and impervious to hacking attempts. Our team of experts is constantly pushing the boundaries of what is possible, and we are constantly exploring new ideas and approaches to make our products even more useful and user-friendly. Whatever your needs may be, we are confident that our software solutions will help you unlock your full potential and achieve your goals with ease.
     </div>
   </div>
-  
-  <footer class="bg-dark text-center text-white">
-    <p style="font-family: fonfon; color: #4e4cc4; filter: drop-shadow(0 0 .313em #4e4cc4); font-weight: bold;" id="corner">Follow us:</p><br>
-    <a target="_SEJ" href="https://www.facebook.com/overworldllc" class="center"><img src="sources/fb.webp" alt="facebook logo" width="50px" height="50px"></a>
-    <br>
-    <a target="_SEJ" href="https://www.twitter.com/@overworldllc" class="center"><img src="sources/tw.webp" alt="twitter logo" width="50px" height="50px"></a>
-    <div style="color: #ffffff; padding: 1%;">
-      &copy; 2023 OverWorld LLC. All rights reserved. | <a class="text-white" href="index.html">Visit our website</a>
+  <footer style="text-align: center; color: #ffffff; padding: 1%;">
+    <p class="center" style="font-family: fonfon; font-size: 1.2em; color: #4e4cc4; font-weight: bold;padding: 0.5em; border-radius: 15px; width: 150px; background-color: #0000009f;" id="corner">Follow us:</p><br>
+    <div>
+      <a style="pointer-events: none;" target="_SEJ" href="https://www.facebook.com/overworldllc" class="center"><img class="social" style="pointer-events: visible;" title="Follow us on Facebook" src="sources/facebook.svg" alt="facebook logo" width="50px" height="50px"></a>
+      <a style="pointer-events: none;" target="_SEJ" href="https://www.twitter.com/overworldllc" class="center"><img class="social" style="pointer-events: visible;" title="Follow us on Twitter" src="sources/twitter.svg" alt="twitter logo" width="50px" height="50px"></a>
+      <a style="pointer-events: none;" target="_SEJ" href="https://discord.gg/33rDb6HsgQ" class="center"><img class="social" style="pointer-events: visible;" title="Follow us on Discord" src="sources/discord.svg" alt="discord logo" width="50px" height="50px"></a>
+      <a style="pointer-events: none;" target="_SEJ" href="https://www.youtube.com/@overworldllc" class="center"><img class="social" style="pointer-events: visible;" title="Follow us on YouTube" src="sources/youtube.svg" alt="youtube logo" width="50px" height="50px"></a>
+      <a style="pointer-events: none;" target="_SEJ" href="https://www.instagram.com/overworldllc" class="center"><img class="social" style="pointer-events: visible;" title="Follow us on Instagram" src="sources/instagram.svg" alt="instagram logo" width="50px" height="50px"></a>
+      <a style="pointer-events: none;" target="_SEJ" href="https://m.me/overworldllc" class="center"><img class="social" style="pointer-events: visible;" title="Get in touch" src="sources/messenger.svg" alt="messenger logo" width="50px" height="50px"></a>
+      <a style="pointer-events: none;" target="_SEJ" href="https://chat.whatsapp.com/GS1VY9uBxidKtJxHsGy1Sk" class="center"><img class="social" style="pointer-events: visible;" title="Get in touch" src="sources/whatsapp.svg" alt="whatsapp logo" width="50px" height="50px"></a>
     </div>
+    <p style="color: #ffffff;">
+      &copy; 2023 OverWorld LLC. All rights reserved.
+    </p>
   </footer>
 </body>
 </html>
